@@ -4,32 +4,33 @@
    ========================================================================== */
 
 :root {
-  --bg-page: #F8FAFC;
-  --bg-surface: #FFFFFF;
-  --bg-subtle: #F1F5F9;
-  --bg-card-outer: #FFFFFF;
-  --bg-card-inner: #F8FAFC;
+  --bg-page: #050505;
+  --bg-surface: #0a0a0a;
+  --bg-subtle: #121212;
+  --bg-card-outer: #0a0a0a;
+  --bg-card-inner: #121212;
 
-  --border-outer: #E2E8F0;
-  --border-inner: #CBD5E1;
-  --inner-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  --border-outer: #27272a;
+  --border-inner: #3f3f46;
+  --inner-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.05);
 
-  --text-primary: #0F172A;
-  --text-secondary: #475569;
-  --text-muted: #64748B;
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  --text-muted: #52525b;
 
-  --accent-blue: #0284C7;
-  --accent-blue-light: #E0F2FE;
-  --accent-cyan: #0EA5E9;
+  --accent-cyan: #fafafa;
+  --accent-cyan-subtle: #27272a;
+  --accent-amber: #e4e4e7;
+  --accent-amber-subtle: #18181b;
 
-  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Space Grotesk', monospace;
 
   --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
   --radius-outer: 1.5rem;
   --radius-inner: 1.15rem;
-  --shadow-solar: 0 20px 40px -15px rgba(15, 23, 42, 0.06);
+  --shadow-soft: 0 20px 40px -15px rgba(0, 0, 0, 0.8);
 }
 
 *, *::before, *::after {

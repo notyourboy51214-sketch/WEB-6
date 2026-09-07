@@ -12,6 +12,30 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
+
+  <style id="niche-override">
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
+    
+    :root {
+      --font-display: 'Space Grotesk', sans-serif !important;
+      --font-body: 'Space Grotesk', sans-serif !important;
+      --bg-page: #e5e5e5 !important;
+      --bg-surface: #ffffff !important;
+      --text-primary: #000000 !important;
+      --radius-outer: 0 !important;
+      --radius-inner: 0 !important;
+    }
+    .bento-card, .bento-core, .gallery-item { 
+      border-radius: 0 !important; 
+      border: 3px solid #000 !important; 
+      box-shadow: 8px 8px 0px #000 !important; 
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .bento-card:hover { transform: translate(-4px, -4px); box-shadow: 12px 12px 0px #000 !important; }
+    .primary-btn { border-radius: 0 !important; border: 2px solid #000 !important; box-shadow: 4px 4px 0px #000; font-weight: bold; }
+    .eyebrow-accent { background: #000; color: #fff; padding: 4px 8px; display: inline-block; }
+  
+  </style>
 </head>
 <body>
 
