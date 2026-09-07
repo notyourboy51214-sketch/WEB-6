@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HELIOS | Distributed Clean Power & Microgrid Systems</title>
+  <meta name="description" content="HELIOS engineers high-efficiency tandem silicon-perovskite solar arrays, solid-state battery microgrids, and intelligent energy independence for modern residences.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Island Navigation -->
+  <header class="nav-wrapper">
+    <nav class="helios-nav" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-sun">☀️</span>
+        <div class="brand-title-box">
+          <span class="brand-name">HELIOS</span>
+          <span class="brand-tag">MICROGRID SYSTEMS</span>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="#architectures" class="nav-link">Solar Tech</a>
+        <a href="#roi-engine" class="nav-link">ROI & Yield Engine</a>
+        <a href="#storage" class="nav-link">PowerCore™ Storage</a>
+        <a href="#specs" class="nav-link">Grid Telemetry</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="btn-solar-sm" id="navAuditBtn">
+          <span>Calculate Yield</span>
+          <span class="btn-icon">⚡</span>
+        </button>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-inner">
+      <a href="#architectures" class="drawer-link">Solar Tech</a>
+      <a href="#roi-engine" class="drawer-link">ROI & Yield Engine</a>
+      <a href="#storage" class="drawer-link">PowerCore™ Storage</a>
+      <a href="#specs" class="drawer-link">Grid Telemetry</a>
+      <button class="btn-solar" id="drawerAuditBtn">
+        <span>Request Microgrid Feasibility</span>
+        <span class="btn-icon">→</span>
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="eyebrow-container">
+          <span class="solar-eyebrow">
+            <span class="pulse-point"></span>
+            TANDEM PEROVSKITE-SILICON 26.8% EFFICIENCY
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          Total Energy Autonomy.<br>
+          <span class="gradient-cyan">Zero Grid Vulnerability.</span>
+        </h1>
+
+        <p class="hero-subtext">
+          Architectural all-black building-integrated photovoltaics (BIPV) coupled with high-voltage solid-state energy storage. Defend against blackout brownouts while exporting clean power.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#roi-engine" class="btn-solar">
+            <span>Launch Solar ROI Engine</span>
+            <span class="btn-icon">⚡</span>
+          </a>
+          <a href="#architectures" class="btn-outline-solar">
+            <span>Explore Hardware Architecture</span>
+            <span class="btn-icon">↓</span>
+          </a>
+        </div>
+
+        <!-- Telemetry Live Bar -->
+        <div class="telemetry-box double-bezel">
+          <div class="telemetry-core">
+            <div class="t-stat">
+              <span class="t-val">26.8<small>%</small></span>
+              <span class="t-desc">NREL Certified Cell Efficiency</span>
+            </div>
+            <div class="t-line"></div>
+            <div class="t-stat">
+              <span class="t-val">30<small>%</small></span>
+              <span class="t-desc">Federal Clean Energy Rebate</span>
+            </div>
+            <div class="t-line"></div>
+            <div class="t-stat">
+              <span class="t-val">10<small>ms</small></span>
+              <span class="t-desc">Seamless Blackout Micro-Transfer</span>
+            </div>
+            <div class="t-line"></div>
+            <div class="t-stat">
+              <span class="t-val">30<small>Yr</small></span>
+              <span class="t-desc">Power Production Guarantee (92%)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Media Frame (Real High-Resolution Architectural Solar Asset) -->
+        <div class="hero-solar-frame double-bezel">
+          <div class="solar-core">
+            <img src="assets/hero.jpg" alt="HELIOS All-Black Solar Array on Modern Architectural Residence" class="hero-img" loading="eager">
+            <div class="solar-hud">
+              <div class="hud-tag">
+                <span class="hud-status"></span>
+                <span>ARRAY STATUS: ACTIVE PEAK HARVEST // 14.8 kW GENERATION</span>
+              </div>
+              <div class="hud-readout">
+                <span class="hud-blue">STORAGE: 98% (42.4 kWh)</span>
+                <span class="hud-cyan">GRID EXPORT: +8.2 kW</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Signature Module: 25-Year Solar ROI & Battery Independence Calculator -->
+    <section id="roi-engine" class="section roi-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="solar-eyebrow">REAL-TIME FINANCIAL & ENERGY MODEL</span>
+          <h2 class="section-title">25-Year Solar ROI & Microgrid Independence Calculator</h2>
+          <p class="section-desc">Calculate your lifetime capital savings, 30% federal investment tax credit (ITC), and grid autonomy based on your monthly utility profile.</p>
+        </div>
+
+        <div class="calc-wrapper double-bezel">
+          <div class="calc-core">
+            <!-- Inputs -->
+            <div class="calc-inputs">
+              <!-- Monthly Bill Slider -->
+              <div class="input-block">
+                <div class="block-header">
+                  <label for="billSlider" class="block-label">Average Monthly Electric Bill</label>
+                  <span class="live-val" id="billDisplay">$380 / month</span>
+                </div>
+                <input type="range" id="billSlider" min="120" max="1500" step="20" value="380" class="helios-slider">
+                <div class="slider-markers">
+                  <span>$120 / mo</span>
+                  <span>$1,500+ / mo</span>
+                </div>
+              </div>
+
+              <!-- Solar Exposure Zone -->
+              <div class="input-block">
+                <label class="block-label">Regional Solar Radiation Index</label>
+                <div class="zone-selector" id="zoneSelector">
+                  <button class="zone-btn" data-sun="4.0">Zone A (Moderate / 4.0 Peak Hrs)</button>
+                  <button class="zone-btn active" data-sun="5.2">Zone B (High / 5.2 Peak Hrs)</button>
+                  <button class="zone-btn" data-sun="6.4">Zone C (Desert Sun / 6.4 Peak Hrs)</button>
+                </div>
+              </div>
+
+              <!-- Battery Storage Units -->
+              <div class="input-block">
+                <div class="block-header">
+                  <label class="block-label">PowerCore™ Solid-State Storage Capacity</label>
+                  <span class="live-val" id="batteryDisplay">2 Units (28 kWh Capacity)</span>
+                </div>
+                <div class="battery-pills" id="batteryPills">
+                  <button class="b-btn" data-units="0">None (Grid-Tied)</button>
+                  <button class="b-btn" data-units="1">1 Unit (14 kWh)</button>
+                  <button class="b-btn active" data-units="2">2 Units (28 kWh)</button>
+                  <button class="b-btn" data-units="3">3 Units (42 kWh Max)</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Calculation Telemetry Results -->
+            <div class="calc-readouts">
+              <div class="readout-head">
+                <span class="pulse-point"></span>
+                <span>SYSTEM YIELD & CAPITAL AMORTIZATION</span>
+              </div>
+
+              <div class="res-highlight">
+                <span class="res-sub">25-Year Net Utility Savings</span>
+                <div class="res-amount-row">
+                  <span class="symbol">$</span>
+                  <span class="bignum" id="netSavings">98,400</span>
+                </div>
+                <span class="compounded-note">Factoring 4.8% historical annual utility escalation</span>
+              </div>
+
+              <div class="res-grid">
+                <div class="sub-stat">
+                  <span class="s-label">Recommended Array Size:</span>
+                  <strong id="arrayKw">12.4 kW DC</strong>
+                </div>
+                <div class="sub-stat">
+                  <span class="s-label">30% Federal ITC Tax Credit:</span>
+                  <strong class="cyan-text" id="federalTaxCredit">$8,940</strong>
+                </div>
+                <div class="sub-stat">
+                  <span class="s-label">Energy Independence Score:</span>
+                  <strong class="blue-text" id="independenceScore">96% Autonomous</strong>
+                </div>
+                <div class="sub-stat">
+                  <span class="s-label">Lifetime Carbon Offset:</span>
+                  <strong id="co2Offset">268 Metric Tons CO₂</strong>
+                </div>
+              </div>
+
+              <button class="btn-solar full-btn" id="lockYieldBtn">
+                <span>Request Custom Microgrid Engineering Design</span>
+                <span class="btn-icon">→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architectures" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="solar-eyebrow">HARDWARE ARCHITECTURE</span>
+          <h2 class="section-title">Engineered to outlast conventional silicon panels by decades.</h2>
+        </div>
+
+        <div class="hardware-grid">
+          <!-- Card 1 -->
+          <div class="hw-card double-bezel">
+            <div class="hw-core">
+              <span class="hw-badge">GENERATION V PHOTOVOLTAICS</span>
+              <h3 class="hw-title">Tandem Perovskite-Silicon Cells</h3>
+              <p class="hw-desc">
+                By layering wide-bandgap perovskite crystals over n-type monocrystalline silicon, HELIOS captures both infrared and ultraviolet spectra with zero spectral loss.
+              </p>
+              <div class="hw-metric">
+                <span class="metric-val">480W</span>
+                <span class="metric-sub">Per Architectural Panel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="hw-card double-bezel">
+            <div class="hw-core">
+              <span class="hw-badge">SOLID-STATE MICROGRID</span>
+              <h3 class="hw-title">PowerCore™ Non-Flammable LFP</h3>
+              <p class="hw-desc">
+                Cobalt-free lithium iron phosphate chemistry with solid electrolyte. Zero thermal runaway risk, rated for 10,000 full recharge cycles at 100% depth of discharge.
+              </p>
+              <div class="hw-metric">
+                <span class="metric-val">10,000</span>
+                <span class="metric-sub">Rated Charge Cycles</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="hw-card double-bezel">
+            <div class="hw-core">
+              <span class="hw-badge">INTELLIGENT GATEWAY</span>
+              <h3 class="hw-title">Bi-directional V2G Vehicle Link</h3>
+              <p class="hw-desc">
+                Export solar electricity straight into your EV, or draw upon your EV's 100 kWh battery pack during severe regional grid blackouts.
+              </p>
+              <div class="hw-metric">
+                <span class="metric-val">19.2 kW</span>
+                <span class="metric-sub">Bi-directional Inversion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Microgrid Audit Modal -->
+    <div class="modal-backdrop" id="auditModal" aria-hidden="true">
+      <div class="modal-shell double-bezel">
+        <div class="modal-inner">
+          <div class="modal-header">
+            <h3>Schedule Microgrid Site Audit</h3>
+            <button class="close-btn" id="closeAuditBtn">&times;</button>
+          </div>
+          <p class="modal-sub">Receive LIDAR satellite roof pitch analysis and net-metering interconnection modeling.</p>
+          <form id="auditForm" class="helios-form">
+            <div class="form-row">
+              <div class="field">
+                <label for="contactName">Full Name</label>
+                <input type="text" id="contactName" required placeholder="Marcus Vance">
+              </div>
+              <div class="field">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" required placeholder="marcus@vance.io">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="siteAddress">Property Address & Zip Code</label>
+                <input type="text" id="siteAddress" required placeholder="742 Evergreen Terr, Scottsdale, AZ 85251">
+              </div>
+              <div class="field">
+                <label for="utilityCo">Utility Provider</label>
+                <input type="text" id="utilityCo" placeholder="APS / SRP / PG&E">
+              </div>
+            </div>
+            <button type="submit" class="btn-solar full-btn">
+              <span>Generate Engineering Feasibility Model</span>
+              <span class="btn-icon">✓</span>
+            </button>
+            <div class="audit-success" id="auditSuccess" style="display:none;">
+              ✓ Site audit queued. Satellite solar irradiation analysis will be delivered to your email in 15 minutes.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Process Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header center">
+          <span class="eyebrow-label">OUR APPROACH</span>
+          <h2 class="section-title">How We Deliver Perfection.</h2>
+          <p class="section-desc">A methodical, refined process designed for the most discerning clientele.</p>
+        </div>
+        <div class="process-grid">
+          
+            <div class="process-step">
+              <span class="step-number">01</span>
+              <h3 class="step-title">Energy Modeling</h3>
+              <p class="step-desc">We map your property using satellite LiDAR to analyze roof planes, shading, and historical energy consumption to design the optimal array.</p>
+            </div>
+          
+            <div class="process-step">
+              <span class="step-number">02</span>
+              <h3 class="step-title">Architectural Integration</h3>
+              <p class="step-desc">We install our ultra-black, bezel-less panels low and tight to the roofline, ensuring they enhance rather than detract from your home's aesthetic.</p>
+            </div>
+          
+            <div class="process-step">
+              <span class="step-number">03</span>
+              <h3 class="step-title">Grid Independence</h3>
+              <p class="step-desc">With integrated smart batteries and our proprietary energy management hub, your home becomes a self-sustaining power island.</p>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow-label">CLIENT EXPERIENCES</span>
+          <h2 class="section-title">Words from our Patrons.</h2>
+        </div>
+        <div class="testimonial-grid">
+          
+            <div class="testimonial-card">
+              <div class="quote-mark">"</div>
+              <p class="testimonial-text">HELIOS proved that solar doesn't have to be ugly. The all-black array looks incredible on our modern roof, and we haven't paid an energy bill since.</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">T</div>
+                <div class="author-info">
+                  <h4>T. Wright</h4>
+                  <span>Homeowner</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="testimonial-card">
+              <div class="quote-mark">"</div>
+              <p class="testimonial-text">The seamless integration and the app experience are pure luxury. Knowing our home is 100% off-grid during storms brings ultimate peace of mind.</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">K</div>
+                <div class="author-info">
+                  <h4>K. Al-Fayed</h4>
+                  <span>Tech Executive</span>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header center">
+          <span class="eyebrow-label">KNOWLEDGE BASE</span>
+          <h2 class="section-title">Frequently Asked Questions.</h2>
+        </div>
+        <div class="faq-grid">
+          
+            <div class="faq-item">
+              <h4 class="faq-q">Will the panels ruin the look of my roof?</h4>
+              <p class="faq-a">Not at all. We use exclusively all-black monocrystalline panels with hidden mounting hardware, creating a sleek, glass-like surface.</p>
+            </div>
+          
+            <div class="faq-item">
+              <h4 class="faq-q">How long does the backup battery last?</h4>
+              <p class="faq-a">A standard dual-battery installation can power a modern luxury home for 3-5 days during a grid outage, assuming standard usage.</p>
+            </div>
+          
+            <div class="faq-item">
+              <h4 class="faq-q">What is the ROI on a premium Helios system?</h4>
+              <p class="faq-a">Most of our clients see a complete return on investment within 6-8 years, while immediately increasing their property valuation.</p>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced CTA Section -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-box">
+          <h2 class="cta-title">Power Your Future, Beautifully</h2>
+          <p class="cta-desc">Request a custom LiDAR energy model for your residence today.</p>
+          <a href="#contact" class="btn-pill">
+            <span>Contact HELIOS Solar Systems</span>
+            <span class="icon-circle">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+
+  <!-- Footer -->
+  <footer class="helios-footer">
+    <div class="container footer-content">
+      <div class="f-left">
+        <span class="f-brand">HELIOS MICROGRID SYSTEMS INC.</span>
+        <p class="f-desc">Distributed solar generation, solid-state microgrid storage, and utility independence.</p>
+      </div>
+      <div class="f-right">
+        <span class="port-tag">RUNNING ON LOCALHOST:5005</span>
+        <span class="f-copy">© 2026 HELIOS Clean Energy Corporation. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
