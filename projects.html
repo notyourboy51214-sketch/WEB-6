@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deployed Assets & Case Studies | Alsa Solar Systems</title>
+  <meta name="description" content="Review our portfolio of commercial and residential solar microgrids deployed across the UAE.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
+  <style>
+    .case-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; padding: 1.5rem; background: var(--bg-dark); border-left: 3px solid var(--brand-orange); }
+    .metric-item h5 { color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
+    .metric-item p { color: #fff; font-family: var(--font-display); font-size: 1.2rem; font-weight: 800; margin: 0; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="brand-box">ALSA SOLAR</div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">SYS_01_HOME</a>
+      <a href="engineering.html" class="nav-link">SYS_02_ENG</a>
+      <a href="projects.html" class="nav-link active">SYS_03_PROJECTS</a>
+      <a href="contact.html" class="btn">INITIALIZE PROJECT</a>
+    </div>
+  </nav>
+
+  <main data-scroll-container>
+    
+    <section class="section" style="padding-top: 150px; background: var(--bg-secondary); border-bottom: 2px solid var(--text-main);">
+      <div class="container">
+        <h1>Deployed<br>Assets.</h1>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        
+        <!-- Case Study 1 -->
+        <div class="project-row" style="border-top: none;">
+          <div class="project-info gs-reveal-up">
+            <span class="tag">Commercial Logistics</span>
+            <h3>JAFZA Logistics Hub</h3>
+            <p style="margin-top: 1.5rem; color: var(--text-muted);">The client required a massive reduction in operational cooling costs for their cold-storage warehouse in Jebel Ali Free Zone. We engineered a dual-glass bifacial array to capture reflected albedo radiation from their white-painted roof.</p>
+            
+            <div class="case-metrics">
+              <div class="metric-item">
+                <h5>System Size</h5>
+                <p>500 kWp</p>
+              </div>
+              <div class="metric-item">
+                <h5>Annual Yield</h5>
+                <p>820 MWh</p>
+              </div>
+              <div class="metric-item">
+                <h5>Payback Period</h5>
+                <p>3.8 Years</p>
+              </div>
+            </div>
+
+            <p style="margin-bottom: 2rem;">"Alsa Solar engineered our rooftop array without interrupting our 24/7 logistics operations. Peak efficiency and complete DEWA net metering compliance from day one."</p>
+            <span style="font-weight: 800; color: var(--brand-orange); text-transform: uppercase;">— Sultan Al Nuaimi, Facility Director</span>
+          </div>
+          <div class="gs-reveal-up">
+            <img src="https://images.unsplash.com/photo-1592833159057-6fcb275bacdc?auto=format&fit=crop&q=80" alt="JAFZA Project" class="project-img">
+          </div>
+        </div>
+
+        <!-- Case Study 2 -->
+        <div class="project-row">
+          <div class="gs-reveal-up">
+            <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&q=80" alt="Residential Project" class="project-img">
+          </div>
+          <div class="project-info gs-reveal-up">
+            <span class="tag">Premium Residential</span>
+            <h3>Arabian Ranches Villa</h3>
+            <p style="margin-top: 1.5rem; color: var(--text-muted);">A high-draw residential villa experiencing extreme DEWA tier pricing during the summer months. We designed a low-profile, aesthetically integrated monocrystalline array that respects community structural guidelines while maximizing southern exposure.</p>
+            
+            <div class="case-metrics">
+              <div class="metric-item">
+                <h5>System Size</h5>
+                <p>25 kWp</p>
+              </div>
+              <div class="metric-item">
+                <h5>Offset Ratio</h5>
+                <p>65% Reduction</p>
+              </div>
+              <div class="metric-item">
+                <h5>Inverter Type</h5>
+                <p>Micro-inverters</p>
+              </div>
+            </div>
+
+            <p style="margin-bottom: 2rem;">"Cut our summer electrical bills by 65%. The engineering team respected our home, and the invertor monitoring software allows us to see our savings in real-time."</p>
+            <span style="font-weight: 800; color: var(--brand-orange); text-transform: uppercase;">— David Miller, Owner</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Same footer -->
+      <div>
+        <div class="brand-box" style="display: inline-flex; margin-bottom: 2rem;">ALSA SOLAR</div>
+        <p style="color: var(--text-muted); font-weight: 500; max-width: 300px;">
+          Engineered solar architecture for extreme thermal environments.
+        </p>
+      </div>
+      <div>
+        <h4>System Map</h4>
+        <ul>
+          <li><a href="engineering.html">Capabilities</a></li>
+          <li><a href="projects.html">Deployed Assets</a></li>
+          <li><a href="contact.html">Project Initialization</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Operations</h4>
+        <ul>
+          <li style="color: var(--text-muted);">Al Shafar Tower 1</li>
+          <li style="color: var(--text-muted);">Al Barsha, Dubai</li>
+          <li><a href="tel:+971553993671" style="color: var(--brand-orange);">+971 55 399 3671</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

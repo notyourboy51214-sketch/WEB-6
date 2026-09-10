@@ -1,54 +1,28 @@
 
-document.addEventListener("DOMContentLoaded", (event) => {
-  // Initialize Lenis
-  const lenis = new Lenis({
-    duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    direction: 'vertical',
-    gestureDirection: 'vertical',
-    smooth: true,
-    mouseMultiplier: 1,
-    smoothTouch: false,
-    touchMultiplier: 2,
+// Initialize Lenis
+const lenis = new Lenis({ duration: 1.2, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
+function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+requestAnimationFrame(raf);
+
+// GSAP Animations
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const reveals = document.querySelectorAll(".gs-reveal");
+  reveals.forEach((el) => {
+    gsap.fromTo(el, 
+      { autoAlpha: 0, y: 50 }, 
+      { duration: 1, autoAlpha: 1, y: 0, ease: "power3.out", scrollTrigger: { trigger: el, start: "top 85%" } }
+    );
   });
 
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-  requestAnimationFrame(raf);
-
-  // GSAP ScrollTrigger Integration
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Initial load animations
-  const tl = gsap.timeline();
-  tl.to("body", { opacity: 1, duration: 0.1 })
-    .to(".fade-in", { opacity: 1, duration: 1, ease: "power2.out" })
-    .to(".slide-up", { y: 0, opacity: 1, duration: 1, ease: "power3.out" }, "-=0.5")
-    .to(".slide-up-delay", { y: 0, opacity: 1, duration: 1, ease: "power3.out" }, "-=0.7")
-    .to(".fade-in-late", { opacity: 1, duration: 1 }, "-=0.5");
-
-  // Scroll Animations
-  gsap.utils.toArray('.stagger-up').forEach(element => {
-    gsap.to(element, {
-      scrollTrigger: {
-        trigger: element,
-        start: "top 85%",
-        toggleActions: "play none none reverse"
-      },
-      y: 0,
-      opacity: 1,
-      duration: 0.8,
-      ease: "power3.out"
-    });
-  });
-
-  // FAQ Interaction
-  document.querySelectorAll('.faq-item').forEach(item => {
-    item.addEventListener('click', () => {
-      item.classList.toggle('active');
-    });
+  const staggerContainers = document.querySelectorAll(".gs-stagger-container");
+  staggerContainers.forEach((container) => {
+    const items = container.querySelectorAll(".gs-stagger-item");
+    gsap.fromTo(items, 
+      { autoAlpha: 0, y: 30 }, 
+      { duration: 0.8, autoAlpha: 1, y: 0, stagger: 0.15, ease: "power2.out", scrollTrigger: { trigger: container, start: "top 85%" } }
+    );
   });
 });
   

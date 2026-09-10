@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Capabilities | Alsa Solar Systems</title>
+  <meta name="description" content="Deep-dive into our industrial solar engineering capabilities, Tier-1 hardware specifications, and DEWA net-metering integration.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+  <style>
+    .hardware-spec { border-top: 2px solid var(--text-main); padding-top: 2rem; margin-top: 2rem; }
+    .hardware-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; }
+    .spec-table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+    .spec-table th, .spec-table td { border-bottom: 1px solid rgba(0,0,0,0.1); padding: 1rem 0; text-align: left; }
+    .spec-table th { color: var(--brand-orange); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; width: 30%; }
+    
+    .timeline { margin-top: 4rem; border-left: 2px solid var(--brand-orange); padding-left: 2rem; }
+    .timeline-step { margin-bottom: 3rem; position: relative; }
+    .timeline-step::before { content: ""; position: absolute; left: -2.45rem; top: 0; width: 16px; height: 16px; background: var(--bg-main); border: 2px solid var(--brand-orange); border-radius: 50%; }
+    .timeline-step h4 { font-size: 1.2rem; margin-bottom: 0.5rem; text-transform: uppercase; font-weight: 800; }
+    
+    @media (max-width: 900px) {
+      .hardware-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="brand-box">ALSA SOLAR</div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">SYS_01_HOME</a>
+      <a href="engineering.html" class="nav-link active">SYS_02_ENG</a>
+      <a href="projects.html" class="nav-link">SYS_03_PROJECTS</a>
+      <a href="contact.html" class="btn">INITIALIZE PROJECT</a>
+    </div>
+  </nav>
+
+  <main data-scroll-container>
+    
+    <section class="section" style="padding-top: 150px; background: var(--bg-secondary); border-bottom: 2px solid var(--text-main);">
+      <div class="container">
+        <h1>Engineering<br>Specs.</h1>
+      </div>
+    </section>
+
+    <!-- PV Arrays Deep Dive -->
+    <section class="section container hardware-spec">
+      <div class="hardware-grid">
+        <div class="gs-reveal-up">
+          <h3 style="font-size: 2rem; line-height: 1.1;">Tier-1 Monocrystalline Architecture</h3>
+          <p style="margin-top: 1.5rem; color: var(--text-muted);">We strictly mandate Bloomberg Tier-1 rated hardware for all microgrid deployments. In the extreme thermal environment of the UAE, module degradation is the primary threat to ROI. Our selected arrays feature anti-PID (Potential Induced Degradation) technology and dual-glass bifacial architecture to maximize albedo capture from reflective roofing surfaces.</p>
+        </div>
+        <div class="gs-reveal-up">
+          <table class="spec-table">
+            <tr>
+              <th>Ideal Application</th>
+              <td>High-yield commercial rooftops, logistics hubs, and heavy-draw residential villas.</td>
+            </tr>
+            <tr>
+              <th>Thermal Coefficient</th>
+              <td>Engineered to maintain >95% output efficiency at 50°C ambient temperatures.</td>
+            </tr>
+            <tr>
+              <th>Lifespan & Warranty</th>
+              <td>25-Year Linear Power Warranty (Guaranteed >85% output at year 25).</td>
+            </tr>
+            <tr>
+              <th>Structural Load</th>
+              <td>Mounting systems rated for 150 km/h wind shear, utilizing aerospace-grade aluminum.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inverter Deep Dive -->
+    <section class="section container hardware-spec">
+      <div class="hardware-grid">
+        <div class="gs-reveal-up">
+          <h3 style="font-size: 2rem; line-height: 1.1;">Power Conversion Topologies</h3>
+          <p style="margin-top: 1.5rem; color: var(--text-muted);">The inverter is the brain of the microgrid. We deploy advanced three-phase string inverters for commercial arrays to ensure multiple MPPT (Maximum Power Point Tracking) zones, mitigating the impact of localized shading from HVAC units or parapet walls.</p>
+        </div>
+        <div class="gs-reveal-up">
+          <table class="spec-table">
+            <tr>
+              <th>Telemetry</th>
+              <td>Built-in Wi-Fi/4G SCADA connectivity for millisecond-level yield monitoring.</td>
+            </tr>
+            <tr>
+              <th>Safety Standards</th>
+              <td>Integrated AFCI (Arc Fault Circuit Interrupter) and Type II SPD on both DC and AC sides.</td>
+            </tr>
+            <tr>
+              <th>Grid Sync</th>
+              <td>Phase-locked loop technology for seamless integration with the DEWA municipal grid.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- The DEWA Process -->
+    <section class="section" style="background: var(--bg-dark); color: var(--text-light); margin-top: 4rem;">
+      <div class="container">
+        <div style="max-width: 800px;">
+          <h2 class="gs-reveal-up" style="color: #fff;">DEWA Net Metering Process.</h2>
+          <p class="gs-reveal-up" style="margin-top: 1.5rem; font-size: 1.2rem; color: rgba(255,255,255,0.7);">We act as the principal contractor, handling 100% of the bureaucratic and technical compliance required to inject power back into the Dubai municipal grid under the Shams Dubai initiative.</p>
+          
+          <div class="timeline gs-reveal-up">
+            <div class="timeline-step">
+              <h4 style="color: var(--brand-orange);">1. NOC & Structural Approval</h4>
+              <p style="color: rgba(255,255,255,0.6);">We submit CAD layouts, single-line diagrams (SLD), and structural load calculations to DEWA and Dubai Municipality to secure the initial No Objection Certificate.</p>
+            </div>
+            <div class="timeline-step">
+              <h4 style="color: var(--brand-orange);">2. Procurement & Execution</h4>
+              <p style="color: rgba(255,255,255,0.6);">Hardware is delivered and array construction begins. Our in-house engineers ensure all AC/DC cabling meets strict IP65 waterproof and UV-resistant standards.</p>
+            </div>
+            <div class="timeline-step">
+              <h4 style="color: var(--brand-orange);">3. DEWA Inspection & Testing</h4>
+              <p style="color: rgba(255,255,255,0.6);">A DEWA inspector visits the site to verify grounding resistance, breaker sizing, and anti-islanding safety mechanisms before authorizing grid connection.</p>
+            </div>
+            <div class="timeline-step">
+              <h4 style="color: var(--brand-orange);">4. Meter Commissioning</h4>
+              <p style="color: rgba(255,255,255,0.6);">The standard utility meter is replaced with a bi-directional smart meter. The system is activated, and surplus generation begins offsetting your utility bills immediately.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-box" style="display: inline-flex; margin-bottom: 2rem;">ALSA SOLAR</div>
+        <p style="color: var(--text-muted); font-weight: 500; max-width: 300px;">
+          Engineered solar architecture for extreme thermal environments.
+        </p>
+      </div>
+      <div>
+        <h4>System Map</h4>
+        <ul>
+          <li><a href="engineering.html">Capabilities</a></li>
+          <li><a href="projects.html">Deployed Assets</a></li>
+          <li><a href="contact.html">Project Initialization</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Operations</h4>
+        <ul>
+          <li style="color: var(--text-muted);">Al Shafar Tower 1</li>
+          <li style="color: var(--text-muted);">Al Barsha, Dubai</li>
+          <li><a href="tel:+971553993671" style="color: var(--brand-orange);">+971 55 399 3671</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
