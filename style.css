@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;700&family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Inter:wght@400;500;600&family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Oswald:wght@400;500;700&family=Outfit:wght@400;600&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@400;600&family=Space+Grotesk:wght@400;600&family=Syne:wght@400;600;700&display=swap');
 
 :root {
-  --bg-dark: #1E293B;
-  --bg-light: #F8FAFC;
-  --primary: #E11D48;
-  --text-dark: #0F172A;
-  --text-light: #F1F5F9;
-  --accent: #FB7185;
-  --font-display: 'Montserrat', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
-  --border-radius: 18px;
-  --box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --bg-dark: #0A192F;
+  --bg-light: #F3F4F6;
+  --primary: #FFD700;
+  --text-dark: #111827;
+  --text-light: #F9FAFB;
+  --accent: #64FFDA;
+  --font-display: 'Cinzel', serif;
+  --font-body: 'Lato', sans-serif;
+  --border-radius: 9px;
+  --box-shadow: 8px 8px 0px 0px var(--primary);
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
