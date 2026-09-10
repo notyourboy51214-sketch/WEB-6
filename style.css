@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;700&family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Inter:wght@400;500;600&family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Oswald:wght@400;500;700&family=Outfit:wght@400;600&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@400;600&family=Space+Grotesk:wght@400;600&family=Syne:wght@400;600;700&display=swap');
 
 :root {
-  --bg-dark: #172554;
-  --bg-light: #EFF6FF;
-  --primary: #2563EB;
-  --text-dark: #1E3A8A;
+  --bg-dark: #1E1E24;
+  --bg-light: #FAFAFA;
+  --primary: #10B981;
+  --text-dark: #18181B;
   --text-light: #FFFFFF;
-  --accent: #60A5FA;
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Outfit', sans-serif;
-  --border-radius: 18px;
-  --box-shadow: 8px 8px 0px 0px var(--primary);
+  --accent: #34D399;
+  --font-display: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --border-radius: 15px;
+  --box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
