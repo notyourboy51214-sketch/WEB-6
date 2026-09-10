@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://05-solar-helios.netlify.app/sitemap.xml
